@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Jaejun Park</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Full-page embedding optimization */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            max-width: 100% !important;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    <div class="container" style="max-width: 100%; height: auto; overflow: visible;">
+    <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
             <nav class="nav-menu">
@@ -21,7 +35,7 @@
             <div class="contact-info">
                 <h3>Contact</h3>
                 <p><strong>Email:</strong><br><a href="mailto:non6512@hanyang.ac.kr">non6512@hanyang.ac.kr</a></p>
-                <p><strong>Google Scholar:</strong><br><a href="https://scholar.google.com/citations?user=hlHQDJwAAAAJ" target="_blank">hlHQDJwAAAAJ</a></p>
+                <p><strong>Google Scholar:</strong><br><a href="https://scholar.google.com/citations?user=hlHQDJwAAAAJ" target="_blank">Jaejun Park</a></p>
                 <p><strong>ORCID:</strong><br><a href="https://orcid.org/0009-0000-9431-3953" target="_blank">0009-0000-9431-3953</a></p>
             </div>
 
@@ -47,6 +61,10 @@
         <!-- Main Content -->
         <main class="main-content">
             <header>
+                <div class="lab-logos">
+                    <img src="images/logo_hyu.png" alt="Hanyang University Logo">
+                    <img src="images/logo_phnl.png" alt="PHNL Lab Logo">
+                </div>
                 <h1>Publications</h1>
                 <p class="subtitle">Papers and Books</p>
             </header>
@@ -77,23 +95,32 @@
                 <h2>Papers and Books</h2>
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1186/s40580-026-00538-0" target="_blank">Beyond persistence: SERS-driven strategies for PFAS detection and monitoring</a></h3>
-                    <p class="pub-meta">DH Nam, H Kim, H Ban, Ö Durak, <strong>J Park</strong>, JD Fortner, S Lee, <strong><em>Nano Convergence</em></strong> 13 (1), 11 (2026)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">DH Nam, H Kim, H Ban, Ö Durak, <strong>J Park</strong>, JD Fortner, S Lee</span>
+                        <strong><em>Nano Convergence</em></strong> 13 (1), 11 (2026)
+                    </p>
                     <div class="pub-summary">
                         This review examines SERS-active platforms for the ultra-sensitive "molecular fingerprinting" of PFAS. It categorizes detection mechanisms into host-guest inclusion, covalent bonding, and physical adsorption to address environmental monitoring challenges.
                     </div>
                 </div>
 
                 <div class="publication-item">
-                    <h3><a href="https://doi.org/10.1002/smll.202505906" target="_blank">Heterointerface‐Driven Electronic Modulation in MoO2@N/Mo‒ReS2 Hybrid for Efficient Alkaline HER, OER, and Overall Water Splitting</a></h3>
-                    <p class="pub-meta">M Singh<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, H Kim<sup>†</sup>, G Kim, D Cha, DR Paudel, BH Kim, S Lee, <strong><em>Small</em></strong> 21 (34), 2505906 (2025)</p>
+                    <h3><a href="https://doi.org/10.1002/smll.202505906" target="_blank">Heterointerface‐Driven Electronic Modulation in MoO<sub>2</sub>@N/Mo‒ReS<sub>2</sub> Hybrid for Efficient Alkaline HER, OER, and Overall Water Splitting</a></h3>
+                    <p class="pub-meta">
+                        <span class="pub-authors">M Singh<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, H Kim<sup>†</sup>, G Kim, D Cha, DR Paudel, BH Kim, S Lee</span>
+                        <strong><em>Small</em></strong> 21 (34), 2505906 (2025)
+                    </p>
                     <div class="pub-summary">
-                        Introduces a MoO2@N/Mo-ReS2 hybrid catalyst that leverages heterointerface-driven electronic modulation to enhance the number of active sites and catalytic performance in overall alkaline water splitting.
+                        Introduces a MoO<sub>2</sub>@N/Mo-ReS<sub>2</sub> hybrid catalyst that leverages heterointerface-driven electronic modulation to enhance the number of active sites and catalytic performance in overall alkaline water splitting.
                     </div>
                 </div>
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1002/celc.202500014" target="_blank">Synchronization of Emerging Materials and their Synthetic Strategies for Efficient Alkaline Water Splitting</a></h3>
-                    <p class="pub-meta">DC Cha, C Kumar, A Maibam, S Yoo, <strong>J Park</strong>, S Kim, H Kim, TI Singh, ..., S Lee, <strong><em>ChemElectroChem</em></strong> 12 (17), e202500014 (2025)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">DC Cha, C Kumar, A Maibam, S Yoo, <strong>J Park</strong>, S Kim, H Kim, TI Singh, ..., S Lee</span>
+                        <strong><em>ChemElectroChem</em></strong> 12 (17), e202500014 (2025)
+                    </p>
                     <div class="pub-summary">
                         A comprehensive review of synthetic strategies for developing electrocatalysts that overcome theoretical overpotential limits in HER and OER for high-purity green hydrogen production.
                     </div>
@@ -101,7 +128,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1080/05704928.2025.2502677" target="_blank">Recent progress on plasmonic hybrid SERS-active substrates for molecular detection</a></h3>
-                    <p class="pub-meta">DH Nam<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, S Kim, H Kim, J Zeng, G Leem, S Lee, <strong><em>Applied Spectroscopy Reviews</em></strong> 60 (9-10), 1042-1085 (2025)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">DH Nam<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, S Kim, H Kim, J Zeng, G Leem, S Lee</span>
+                        <strong><em>Applied Spectroscopy Reviews</em></strong> 60 (9-10), 1042-1085 (2025)
+                    </p>
                     <div class="pub-summary">
                         Reviews advances in hybrid SERS substrates combining plasmonic metals with carbon nanostructures and MOFs, focusing on enhancing signal reproducibility and selectivity for diagnostic applications.
                     </div>
@@ -109,7 +139,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1039/D5LC00238A" target="_blank">Well-defined assembly of plasmonic metal nanoparticles by dielectrophoresis for highly sensitive SERS-active substrates</a></h3>
-                    <p class="pub-meta">YS Yeo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, DH Nam, H Kim, TJ Lee, G Leem, JS Kwon, S Lee, <strong><em>Lab on a Chip</em></strong> 25 (17), 4309-4316 (2025)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">YS Yeo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, DH Nam, H Kim, TJ Lee, G Leem, JS Kwon, S Lee</span>
+                        <strong><em>Lab on a Chip</em></strong> 25 (17), 4309-4316 (2025)
+                    </p>
                     <div class="pub-summary">
                         Details a precision assembly method using dielectrophoresis to create uniform nanoparticle patterns, resulting in stable "hotspots" for trace-level molecular detection down to 10⁻¹⁰ M.
                     </div>
@@ -117,7 +150,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1016/j.mtchem.2024.102433" target="_blank">Morphology-controlled mesoporous core–shell carbon nanospheres decorated with Cu nanoparticles as highly efficient and reusable catalyst</a></h3>
-                    <p class="pub-meta">CY Lee, TH Kim, <strong>J Park</strong>, WS Yang, S Lee, <strong><em>Materials Today Chemistry</em></strong> 42, 102433 (2024)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">CY Lee, TH Kim, <strong>J Park</strong>, WS Yang, S Lee</span>
+                        <strong><em>Materials Today Chemistry</em></strong> 42, 102433 (2024)
+                    </p>
                     <div class="pub-summary">
                         Presents the synthesis of mesoporous core-shell carbon nanospheres with Cu nanoparticles, demonstrating high surface area and reusability for the efficient reduction of organic pollutants.
                     </div>
@@ -125,7 +161,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1039/D5YA00022J" target="_blank">Interface engineering strategies for enhanced electrocatalytic hydrogen evolution reaction</a></h3>
-                    <p class="pub-meta">M Singh, DR Paudel, H Kim, TH Kim, <strong>J Park</strong>, S Lee, <strong><em>Energy Advances</em></strong> 4 (6), 716-742 (2025)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">M Singh, DR Paudel, H Kim, TH Kim, <strong>J Park</strong>, S Lee</span>
+                        <strong><em>Energy Advances</em></strong> 4 (6), 716-742 (2025)
+                    </p>
                     <div class="pub-summary">
                         Explores interface engineering as a key strategy to modulate electronic states and local environments of catalysts, optimizing water dissociation and hydrogen adsorption for superior HER performance.
                     </div>
@@ -133,7 +172,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://doi.org/10.1039/D5NA00052A" target="_blank">Highly sensitive SERS-active substrate with uniform gold nanostructures on heat-treated Ni foam for detection of cardiovascular disease biomarker</a></h3>
-                    <p class="pub-meta">S Yoo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, DH Nam, S Kim, D Jeong, MK Lee, S Lee, <strong><em>Nanoscale Advances</em></strong> 7 (8), 2171-2181 (2025)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">S Yoo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, DH Nam, S Kim, D Jeong, MK Lee, S Lee</span>
+                        <strong><em>Nanoscale Advances</em></strong> 7 (8), 2171-2181 (2025)
+                    </p>
                     <div class="pub-summary">
                         Development of a uniform gold-decorated Ni foam substrate through heat treatment, achieving high SERS sensitivity for the detection of cardiac biomarkers like troponin I.
                     </div>
@@ -141,7 +183,10 @@
 
                 <div class="publication-item">
                     <h3><a href="https://pubs.acs.org/doi/10.1021/bk-2024-1468.ch003" target="_blank">Photocatalysis-Derived Biomass Conversion for Green Hydrogen Production</a></h3>
-                    <p class="pub-meta">M Singh, DC Cha, H Kim, <strong>J Park</strong>, S Kim, CG Yoo, G Leem, S Lee, <strong><em>Sustainable and Green Hydrogen Production</em></strong> (2024)</p>
+                    <p class="pub-meta">
+                        <span class="pub-authors">M Singh, DC Cha, H Kim, <strong>J Park</strong>, S Kim, CG Yoo, G Leem, S Lee</span>
+                        <strong><em>Sustainable and Green Hydrogen Production</em></strong> (2024)
+                    </p>
                     <div class="pub-summary">
                         Discusses integrating biomass valorization with photocatalytic water splitting to improve hydrogen yield while simultaneously producing value-added chemicals.
                     </div>
