@@ -1,182 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Jaejun Park</title>
+    <title>Publications, Patents and Presentations | Jaejun Park</title>
+    <meta name="description" content="Journal articles, reviews, a book chapter, patents and conference presentations by Jaejun Park.">
+    <meta property="og:title" content="Publications, Patents and Presentations | Jaejun Park">
+    <meta property="og:description" content="Journal articles, reviews, a book chapter, patents and conference presentations by Jaejun Park.">
+    <script>
+    /* Language: "en" (default) or "ko". Chosen with the switch, remembered in this browser, or forced with #ko / #en. */
+    (function(){var l='en';try{l=localStorage.getItem('cv-lang')||l}catch(e){}
+    if(location.hash==='#ko')l='ko';if(location.hash==='#en')l='en';
+    document.documentElement.setAttribute('data-lang',l);document.documentElement.lang=l})();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Noto+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <nav class="nav-menu">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./publications.html" class="active">Publications</a></li>
-                </ul>
+<div class="band-a"><div class="page">
+
+    <div class="top">
+        <a class="who" href="./index.html">Jaejun Park</a>
+        <div class="right">
+            <nav aria-label="Site">
+                <a href="./index.html">CV</a>
+                <a href="./publications.html" aria-current="page">Publications</a>
+                <a href="https://sites.google.com/view/phnl/" target="_blank" rel="noopener">Lab</a>
             </nav>
-
-            <div class="contact-info">
-                <h3>Contact</h3>
-                <p><strong>Email:</strong><br><a href="mailto:non6512@hanyang.ac.kr">non6512@hanyang.ac.kr</a></p>
-                <p><strong>Google Scholar:</strong><br><a href="https://scholar.google.com/citations?user=hlHQDJwAAAAJ" target="_blank">Jaejun Park</a></p>
-                <p><strong>ORCID:</strong><br><a href="https://orcid.org/0009-0000-9431-3953" target="_blank">0009-0000-9431-3953</a></p>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-set-lang="en">English</button>
+                <button type="button" data-set-lang="ko" lang="ko">한국어</button>
             </div>
-
-            <div class="contact-info">
-                <h3>Research Metrics</h3>
-                <!-- Google Scholar, as of 2026-11-08 -->
-                <div class="metrics">
-                    <div class="metric-item"><span>Publications</span> <span>11</span></div>
-                    <div class="metric-item"><span>Citations</span> <span>142</span></div>
-                    <div class="metric-item"><span>h-index</span> <span>6</span></div>
-                    <div class="metric-item"><span>i10-index</span> <span>3</span></div>
-                </div>
-                <p class="metric-note">Source: Google Scholar (Nov 2026)</p>
-            </div>
-
-            <div class="contact-info">
-                <h3>Expertise</h3>
-                <p>Shape-controlled Nanoparticle Synthesis</p>
-                <p>Plasmonics &amp; SERS</p>
-                <p>Electrocatalysis &amp; Water Splitting</p>
-                <p>Electrocatalytic Biomass Conversion</p>
-                <p>COMSOL Multiphysics &amp; DFT</p>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <header>
-                <h1>Publications</h1>
-                <p class="subtitle">Papers and Books</p>
-                <p class="pub-legend"><sup>†</sup> Equal contribution &nbsp;·&nbsp; <span class="tag tag-cover">Cover</span> Journal cover article &nbsp;·&nbsp; <span class="tag tag-first">Co-first</span> Co-first author</p>
-            </header>
-
-            <section class="section">
-                <h2>Cover Arts</h2>
-                <div class="publication-gallery">
-                    <div class="gallery-item">
-                        <img src="images/LoC.png" alt="Lab on a Chip Cover">
-                        <p>Lab on a Chip (2025)</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/CEC.png" alt="ChemElectroChem Cover">
-                        <p>ChemElectroChem (2025)</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/EA.png" alt="Energy Advances Cover">
-                        <p>Energy Advances (2025)</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/NA.png" alt="Nanoscale Advances Cover">
-                        <p>Nanoscale Advances (2025)</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Papers and Books <span class="count">(11)</span></h2>
-                <div class="publication-item">
-                    <h3><span class="pub-num">[11]</span> <a href="https://doi.org/10.1016/j.ijhydene.2026.157566" target="_blank">High-entropy materials for electrocatalysis: Fundamentals, design, and applications in OER/ORR</a></h3>
-                    <p class="pub-meta">MA Habib<sup>†</sup>, M Singh<sup>†</sup>, H Kim, <strong>J Park</strong>, S Kim, DC Cha, J Jung, YS Yeo, S Yoo, J Lee, JH Lee, S Lee, <strong><em>International Journal of Hydrogen Energy</em></strong> 276, 157566 (2026)</p>
-                    <div class="pub-summary">
-                        Reviews high-entropy materials as electrocatalysts for the oxygen evolution and oxygen reduction reactions, covering the fundamentals of multi-element synergy, rational design strategies, and their application in energy conversion devices.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[10]</span> <a href="https://doi.org/10.1186/s40580-026-00538-0" target="_blank">Beyond persistence: SERS-driven strategies for PFAS detection and monitoring</a></h3>
-                    <p class="pub-meta">DH Nam<sup>†</sup>, H Kim<sup>†</sup>, H Ban<sup>†</sup>, Ö Durak, <strong>J Park</strong>, JD Fortner, S Lee, <strong><em>Nano Convergence</em></strong> 13 (1), 11 (2026)</p>
-                    <div class="pub-summary">
-                        This review examines SERS-active platforms for the ultra-sensitive "molecular fingerprinting" of PFAS. It categorizes detection mechanisms into host-guest inclusion, covalent bonding, and physical adsorption to address environmental monitoring challenges.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[9]</span> <a href="https://doi.org/10.7473/EC.2026.61.1.1" target="_blank">Morphology-directed growth of urchin-like Au nanoparticles using modular microfluidic chips</a></h3>
-                    <p class="pub-meta">H Kim<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Lee, <strong><em>Elastomers and Composites</em></strong> 61 (1), 1-7 (2026)</p>
-                    <div class="pub-tags"><span class="tag tag-first">Co-first</span></div>
-                    <div class="pub-summary">
-                        Employs modular microfluidic chips to direct the growth of urchin-like Au nanoparticles, enabling controlled tuning of branched morphology through reaction conditions in a continuous-flow format.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[8]</span> <a href="https://doi.org/10.1002/smll.202505906" target="_blank">Heterointerface‐Driven Electronic Modulation in MoO<sub>2</sub>@N/Mo‒ReS<sub>2</sub> Hybrid for Efficient Alkaline HER, OER, and Overall Water Splitting</a></h3>
-                    <p class="pub-meta">M Singh<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, H Kim<sup>†</sup>, G Kim, D Cha, DR Paudel, BH Kim, S Lee, <strong><em>Small</em></strong> 21 (34), 2505906 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-first">Co-first</span></div>
-                    <div class="pub-summary">
-                        Introduces a MoO<sub>2</sub>@N/Mo-ReS<sub>2</sub> hybrid catalyst that leverages heterointerface-driven electronic modulation to enhance the number of active sites and catalytic performance in overall alkaline water splitting.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[7]</span> <a href="https://doi.org/10.1002/celc.202500014" target="_blank">Synchronization of Emerging Materials and their Synthetic Strategies for Efficient Alkaline Water Splitting</a></h3>
-                    <p class="pub-meta">DC Cha, C Kumar, A Maibam, S Yoo, <strong>J Park</strong>, S Kim, H Kim, TI Singh, S Lee, <strong><em>ChemElectroChem</em></strong> 12 (17), e202500014 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-cover">Cover</span></div>
-                    <div class="pub-summary">
-                        A comprehensive review of synthetic strategies for developing electrocatalysts that overcome theoretical overpotential limits in HER and OER for high-purity green hydrogen production.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[6]</span> <a href="https://doi.org/10.1039/D5LC00238A" target="_blank">Well-defined assembly of plasmonic metal nanoparticles by dielectrophoresis for highly sensitive SERS-active substrates</a></h3>
-                    <p class="pub-meta">YS Yeo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, DH Nam, H Kim, TJ Lee, G Leem, JS Kwon, S Lee, <strong><em>Lab on a Chip</em></strong> 25 (17), 4309-4316 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-first">Co-first</span> <span class="tag tag-cover">Cover</span></div>
-                    <div class="pub-summary">
-                        Details a precision assembly method using dielectrophoresis to create uniform nanoparticle patterns, resulting in stable "hotspots" for trace-level molecular detection down to 10<sup>−10</sup> M.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[5]</span> <a href="https://doi.org/10.1080/05704928.2025.2502677" target="_blank">Recent progress on plasmonic hybrid SERS-active substrates for molecular detection</a></h3>
-                    <p class="pub-meta">DH Nam<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, S Kim, H Kim, J Zeng, G Leem, S Lee, <strong><em>Applied Spectroscopy Reviews</em></strong> 60 (9-10), 1042-1085 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-first">Co-first</span></div>
-                    <div class="pub-summary">
-                        Reviews advances in hybrid SERS substrates combining plasmonic metals with carbon nanostructures and MOFs, focusing on enhancing signal reproducibility and selectivity for diagnostic applications.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[4]</span> <a href="https://doi.org/10.1039/D5YA00022J" target="_blank">Interface engineering strategies for enhanced electrocatalytic hydrogen evolution reaction</a></h3>
-                    <p class="pub-meta">M Singh, DR Paudel, H Kim, TH Kim, <strong>J Park</strong>, S Lee, <strong><em>Energy Advances</em></strong> 4 (6), 716-742 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-cover">Cover</span></div>
-                    <div class="pub-summary">
-                        Explores interface engineering as a key strategy to modulate electronic states and local environments of catalysts, optimizing water dissociation and hydrogen adsorption for superior HER performance.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[3]</span> <a href="https://doi.org/10.1039/D5NA00052A" target="_blank">Highly sensitive SERS-active substrate with uniform gold nanostructures on heat-treated Ni foam for detection of cardiovascular disease biomarker</a></h3>
-                    <p class="pub-meta">S Yoo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, DH Nam, S Kim, D Jeong, MK Lee, S Lee, <strong><em>Nanoscale Advances</em></strong> 7 (8), 2171-2181 (2025)</p>
-                    <div class="pub-tags"><span class="tag tag-first">Co-first</span> <span class="tag tag-cover">Cover</span></div>
-                    <div class="pub-summary">
-                        Development of a uniform gold-decorated Ni foam substrate through heat treatment, achieving high SERS sensitivity for the detection of cardiac biomarkers like troponin I.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[2]</span> <a href="https://doi.org/10.1016/j.mtchem.2024.102433" target="_blank">Morphology-controlled mesoporous core–shell carbon nanospheres decorated with Cu nanoparticles as highly efficient and reusable catalyst</a></h3>
-                    <p class="pub-meta">CY Lee<sup>†</sup>, TH Kim<sup>†</sup>, <strong>J Park</strong>, WS Yang, S Lee, <strong><em>Materials Today Chemistry</em></strong> 42, 102433 (2024)</p>
-                    <div class="pub-summary">
-                        Presents the synthesis of mesoporous core-shell carbon nanospheres with Cu nanoparticles, demonstrating high surface area and reusability for the efficient reduction of organic pollutants.
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <h3><span class="pub-num">[1]</span> <a href="https://pubs.acs.org/doi/10.1021/bk-2024-1468.ch003" target="_blank">Photocatalysis-Derived Biomass Conversion for Green Hydrogen Production</a></h3>
-                    <p class="pub-meta">M Singh, DC Cha, H Kim, <strong>J Park</strong>, S Kim, CG Yoo, G Leem, S Lee, <strong><em>Towards Sustainable and Green Hydrogen Production by Photocatalysis (Vol. 2)</em></strong> ACS Symposium Series 1468, 47-78 (2024)</p>
-                    <div class="pub-tags"><span class="tag tag-chapter">Book Chapter</span></div>
-                    <div class="pub-summary">
-                        Discusses integrating biomass valorization with photocatalytic water splitting to improve hydrogen yield while simultaneously producing value-added chemicals.
-                    </div>
-                </div>
-
-            </section>
-        </main>
+        </div>
     </div>
+
+    <header class="pagehead">
+        <h1>Publications</h1>
+        <p><span class="en">Eleven journal papers and one book chapter, one patent family and fifteen conference presentations.</span><span class="ko" lang="ko">저널 논문 11편과 book chapter 1편, 특허 1건(patent family), 학회 발표 15건.</span></p>
+        <ul class="jump">
+            <li><a href="#list">Papers and books</a></li>
+            <li><a href="#prep">In preparation</a></li>
+            <li><a href="#patents">Patents</a></li>
+            <li><a href="#presentations">Presentations</a></li>
+        </ul>
+    </header>
+
+    <section class="block" id="list">
+        <h2>Papers and books <small><span class="en">12 in total, newest first. Six as co-first author, four on journal front covers.</span><span class="ko" lang="ko">총 12편, 최신순. 공동 제1저자 6편, front cover 4편.</span></small></h2>
+        <div class="entries">
+            <p class="legend"><span><sup>†</sup> <span class="en">Equal contribution</span><span class="ko" lang="ko">공동 제1저자 (equal contribution)</span></span><span><span class="tag cover">Front cover</span> <span class="en">Journal front cover</span><span class="ko" lang="ko">저널 front cover 선정</span></span></p>
+
+            <!-- EDIT:p12  Accepted paper added 2026-11-16. Add volume, article number and DOI once published. "Review" tag assumed from the title. -->
+            <div class="pub" id="p12">
+                <div class="title"><span class="num">[12]</span>Mechanistic insights into MEA stability and degradation in industrial-scale electrolysis: Fundamentals, recent progress, challenges, and future perspectives</div>
+                <p class="authors">MA Habib<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, H Kim, S Kim, J Jung, M Singh, D Cha, J Jeong, G Leem, MC Choi, W Yang, S Lee</p>
+                <p class="venue"><em>Nano Convergence</em>, <span class="en">accepted (2026)</span><span class="ko" lang="ko">게재 승인 (2026)</span></p>
+                <div class="tags"><span class="tag first">Co-first</span><span class="tag">Review</span></div>
+            </div>
+
+            <div class="pub" id="p11">
+                <div class="title"><span class="num">[11]</span><a href="https://doi.org/10.1016/j.ijhydene.2026.157566" target="_blank" rel="noopener">High-entropy materials for electrocatalysis: Fundamentals, design, and applications in OER/ORR</a></div>
+                <p class="authors">MA Habib<sup>†</sup>, M Singh<sup>†</sup>, H Kim, <strong>J Park</strong>, S Kim, DC Cha, J Jung, YS Yeo, S Yoo, J Lee, JH Lee, S Lee</p>
+                <p class="venue"><em>International Journal of Hydrogen Energy</em> 276, 157566 (2026)</p>
+                <p class="gist"><span class="en">Reviews high-entropy materials as electrocatalysts for the oxygen evolution and oxygen reduction reactions, covering the fundamentals of multi-element synergy, rational design strategies, and their application in energy conversion devices.</span><span class="ko" lang="ko">OER 및 ORR용 electrocatalyst로서의 high-entropy material을 다룬 review. 다원소 synergy의 기초, 설계 전략, 에너지 변환 소자 응용을 정리함.</span></p>
+                <div class="tags"><span class="tag">Review</span></div>
+            </div>
+
+            <div class="pub" id="p10">
+                <div class="title"><span class="num">[10]</span><a href="https://doi.org/10.1186/s40580-026-00538-0" target="_blank" rel="noopener">Beyond persistence: SERS-driven strategies for PFAS detection and monitoring</a></div>
+                <p class="authors">DH Nam<sup>†</sup>, H Kim<sup>†</sup>, H Ban<sup>†</sup>, Ö Durak, <strong>J Park</strong>, JD Fortner, S Lee</p>
+                <p class="venue"><em>Nano Convergence</em> 13 (1), 11 (2026)</p>
+                <p class="gist"><span class="en">This review examines SERS-active platforms for the ultra-sensitive "molecular fingerprinting" of PFAS. It categorizes detection mechanisms into host-guest inclusion, covalent bonding, and physical adsorption to address environmental monitoring challenges.</span><span class="ko" lang="ko">PFAS의 초고감도 검출을 위한 SERS-active platform을 정리한 review. 검출 메커니즘을 host-guest inclusion, covalent bonding, physical adsorption으로 분류함.</span></p>
+                <div class="tags"><span class="tag">Review</span></div>
+            </div>
+
+            <div class="pub" id="p9">
+                <div class="title"><span class="num">[9]</span><a href="https://doi.org/10.7473/EC.2026.61.1.1" target="_blank" rel="noopener">Morphology-directed growth of urchin-like Au nanoparticles using modular microfluidic chips</a></div>
+                <p class="authors">H Kim<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Lee</p>
+                <p class="venue"><em>Elastomers and Composites</em> 61 (1), 1-7 (2026)</p>
+                <p class="gist"><span class="en">Employs modular microfluidic chips to direct the growth of urchin-like Au nanoparticles, enabling controlled tuning of branched morphology through reaction conditions in a continuous-flow format.</span><span class="ko" lang="ko">Modular microfluidic chip으로 urchin-like Au nanoparticle의 성장을 유도하고, continuous-flow 조건에서 반응 조건에 따라 branched morphology를 조절함.</span></p>
+                <div class="tags"><span class="tag first">Co-first</span></div>
+            </div>
+
+            <div class="pub" id="p8">
+                <div class="title"><span class="num">[8]</span><a href="https://doi.org/10.1002/smll.202505906" target="_blank" rel="noopener">Heterointerface‐Driven Electronic Modulation in MoO<sub>2</sub>@N/Mo‒ReS<sub>2</sub> Hybrid for Efficient Alkaline HER, OER, and Overall Water Splitting</a></div>
+                <p class="authors">M Singh<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, H Kim<sup>†</sup>, G Kim, D Cha, DR Paudel, BH Kim, S Lee</p>
+                <p class="venue"><em>Small</em> 21 (34), 2505906 (2025)</p>
+                <p class="gist"><span class="en">Introduces a MoO<sub>2</sub>@N/Mo-ReS<sub>2</sub> hybrid catalyst that leverages heterointerface-driven electronic modulation to enhance the number of active sites and catalytic performance in overall alkaline water splitting.</span><span class="ko" lang="ko">Heterointerface에 의한 electronic modulation으로 active site와 촉매 성능을 높인 MoO<sub>2</sub>@N/Mo-ReS<sub>2</sub> hybrid catalyst를 제시하고 alkaline overall water splitting에 적용함.</span></p>
+                <div class="tags"><span class="tag first">Co-first</span></div>
+            </div>
+
+            <div class="pub withcover" id="p7">
+                <div class="text">
+                    <div class="title"><span class="num">[7]</span><a href="https://doi.org/10.1002/celc.202500014" target="_blank" rel="noopener">Synchronization of Emerging Materials and their Synthetic Strategies for Efficient Alkaline Water Splitting</a></div>
+                    <p class="authors">DC Cha, C Kumar, A Maibam, S Yoo, <strong>J Park</strong>, S Kim, H Kim, TI Singh, S Lee</p>
+                    <p class="venue"><em>ChemElectroChem</em> 12 (17), e202500014 (2025)</p>
+                    <p class="gist"><span class="en">A comprehensive review of synthetic strategies for developing electrocatalysts that overcome theoretical overpotential limits in HER and OER for high-purity green hydrogen production.</span><span class="ko" lang="ko">HER과 OER의 overpotential 한계를 넘기 위한 electrocatalyst 합성 전략을 정리한 review.</span></p>
+                    <div class="tags"><span class="tag cover">Front cover</span><span class="tag">Review</span></div>
+                </div>
+                <img src="images/cover-chemelectrochem-2025.jpg" alt="ChemElectroChem front cover" width="640" height="850" loading="lazy">
+            </div>
+
+            <div class="pub withcover" id="p6">
+                <div class="text">
+                    <div class="title"><span class="num">[6]</span><a href="https://doi.org/10.1039/D5LC00238A" target="_blank" rel="noopener">Well-defined assembly of plasmonic metal nanoparticles by dielectrophoresis for highly sensitive SERS-active substrates</a></div>
+                    <p class="authors">YS Yeo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, DH Nam, H Kim, TJ Lee, G Leem, JS Kwon, S Lee</p>
+                    <p class="venue"><em>Lab on a Chip</em> 25 (17), 4309-4316 (2025)</p>
+                    <p class="gist"><span class="en">Details a precision assembly method using dielectrophoresis to create uniform nanoparticle patterns, resulting in stable "hotspots" for trace-level molecular detection down to 10<sup>−10</sup> M.</span><span class="ko" lang="ko">Dielectrophoresis로 nanoparticle을 균일한 패턴으로 조립해 안정적인 hotspot을 형성하고, 10<sup>−10</sup> M 수준의 분자 검출을 보임.</span></p>
+                    <div class="tags"><span class="tag first">Co-first</span><span class="tag cover">Front cover</span></div>
+                </div>
+                <img src="images/cover-lab-on-a-chip-2025.jpg" alt="Lab on a Chip front cover" width="640" height="878" loading="lazy">
+            </div>
+
+            <div class="pub" id="p5">
+                <div class="title"><span class="num">[5]</span><a href="https://doi.org/10.1080/05704928.2025.2502677" target="_blank" rel="noopener">Recent progress on plasmonic hybrid SERS-active substrates for molecular detection</a></div>
+                <p class="authors">DH Nam<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, S Yoo, S Kim, H Kim, J Zeng, G Leem, S Lee</p>
+                <p class="venue"><em>Applied Spectroscopy Reviews</em> 60 (9-10), 1042-1085 (2025)</p>
+                <p class="gist"><span class="en">Reviews advances in hybrid SERS substrates combining plasmonic metals with carbon nanostructures and MOFs, focusing on enhancing signal reproducibility and selectivity for diagnostic applications.</span><span class="ko" lang="ko">Plasmonic metal과 carbon nanostructure, MOF를 결합한 hybrid SERS substrate의 최근 연구를 정리한 review. 신호 재현성과 선택성 향상에 초점을 둠.</span></p>
+                <div class="tags"><span class="tag first">Co-first</span><span class="tag">Review</span></div>
+            </div>
+
+            <div class="pub withcover" id="p4">
+                <div class="text">
+                    <div class="title"><span class="num">[4]</span><a href="https://doi.org/10.1039/D5YA00022J" target="_blank" rel="noopener">Interface engineering strategies for enhanced electrocatalytic hydrogen evolution reaction</a></div>
+                    <p class="authors">M Singh, DR Paudel, H Kim, TH Kim, <strong>J Park</strong>, S Lee</p>
+                    <p class="venue"><em>Energy Advances</em> 4 (6), 716-742 (2025)</p>
+                    <p class="gist"><span class="en">Explores interface engineering as a key strategy to modulate electronic states and local environments of catalysts, optimizing water dissociation and hydrogen adsorption for superior HER performance.</span><span class="ko" lang="ko">촉매의 electronic state와 local environment를 조절하는 interface engineering 전략을 정리한 review. HER 성능을 위한 water dissociation과 hydrogen adsorption 최적화를 다룸.</span></p>
+                    <div class="tags"><span class="tag cover">Front cover</span><span class="tag">Review</span></div>
+                </div>
+                <img src="images/cover-energy-advances-2025.jpg" alt="Energy Advances front cover" width="640" height="878" loading="lazy">
+            </div>
+
+            <div class="pub withcover" id="p3">
+                <div class="text">
+                    <div class="title"><span class="num">[3]</span><a href="https://doi.org/10.1039/D5NA00052A" target="_blank" rel="noopener">Highly sensitive SERS-active substrate with uniform gold nanostructures on heat-treated Ni foam for detection of cardiovascular disease biomarker</a></div>
+                    <p class="authors">S Yoo<sup>†</sup>, <strong>J Park</strong><sup>†</sup>, DH Nam, S Kim, D Jeong, MK Lee, S Lee</p>
+                    <p class="venue"><em>Nanoscale Advances</em> 7 (8), 2171-2181 (2025)</p>
+                    <p class="gist"><span class="en">Development of a uniform gold-decorated Ni foam substrate through heat treatment, achieving high SERS sensitivity for the detection of cardiac biomarkers like troponin I.</span><span class="ko" lang="ko">열처리한 Ni foam 위에 균일한 Au nanostructure를 형성한 SERS substrate를 개발하고, troponin I 등 cardiac biomarker 검출에 적용함.</span></p>
+                    <div class="tags"><span class="tag first">Co-first</span><span class="tag cover">Front cover</span></div>
+                </div>
+                <img src="images/cover-nanoscale-advances-2025.jpg" alt="Nanoscale Advances front cover" width="640" height="877" loading="lazy">
+            </div>
+
+            <div class="pub" id="p2">
+                <div class="title"><span class="num">[2]</span><a href="https://doi.org/10.1016/j.mtchem.2024.102433" target="_blank" rel="noopener">Morphology-controlled mesoporous core–shell carbon nanospheres decorated with Cu nanoparticles as highly efficient and reusable catalyst</a></div>
+                <p class="authors">CY Lee<sup>†</sup>, TH Kim<sup>†</sup>, <strong>J Park</strong>, WS Yang, S Lee</p>
+                <p class="venue"><em>Materials Today Chemistry</em> 42, 102433 (2024)</p>
+                <p class="gist"><span class="en">Presents the synthesis of mesoporous core-shell carbon nanospheres with Cu nanoparticles, demonstrating high surface area and reusability for the efficient reduction of organic pollutants.</span><span class="ko" lang="ko">Cu nanoparticle을 담지한 mesoporous core-shell carbon nanosphere를 합성하고, 유기 오염물 환원 반응에서 높은 활성과 재사용성을 보임.</span></p>
+            </div>
+
+            <div class="pub" id="p1">
+                <div class="title"><span class="num">[1]</span><a href="https://pubs.acs.org/doi/10.1021/bk-2024-1468.ch003" target="_blank" rel="noopener">Photocatalysis-Derived Biomass Conversion for Green Hydrogen Production</a></div>
+                <p class="authors">M Singh, DC Cha, H Kim, <strong>J Park</strong>, S Kim, CG Yoo, G Leem, S Lee</p>
+                <p class="venue"><em>Towards Sustainable and Green Hydrogen Production by Photocatalysis (Vol. 2)</em> ACS Symposium Series 1468, 47-78 (2024)</p>
+                <p class="gist"><span class="en">Discusses integrating biomass valorization with photocatalytic water splitting to improve hydrogen yield while simultaneously producing value-added chemicals.</span><span class="ko" lang="ko">Biomass valorization과 photocatalytic water splitting을 결합해 수소 수율을 높이고 고부가 화합물을 함께 생산하는 방법을 다룬 book chapter.</span></p>
+                <div class="tags"><span class="tag">Book chapter</span></div>
+            </div>
+        </div>
+    </section>
+</div></div>
+
+<div class="band-b"><div class="page">
+    <section class="block first" id="prep">
+        <h2>In preparation</h2>
+        <div class="entries">
+            <!-- EDIT:d3  Status "in preparation" per the owner (2026-11-16). In the second manuscript the first three authors carried a "1" mark
+                 in the supplied list; it is shown here as equal contribution. Confirm. -->
+            <div class="pub">
+                <div class="title">Controlled Surface Morphological Study for Plasmonic Enhanced Optical Property of Upconversion Nanoparticles</div>
+                <p class="authors"><strong>J Park</strong><sup>†</sup>, EJ Park<sup>†</sup>, S Kim<sup>†</sup>, YS Yeo, S Lee</p>
+                <p class="venue"><span class="en">In preparation</span><span class="ko" lang="ko">준비 중 (in preparation)</span></p>
+            </div>
+            <div class="pub">
+                <div class="title">Optimization of Water Dissociation and Hydrogen Adsorption via Partially Oxygenated Pd-O Species and Lattice-mismatched WN Heterostructure for Efficient Alkaline Hydrogen Evolution</div>
+                <p class="authors">M Singh<sup>†</sup>, TH Kim<sup>†</sup>, DK Kim<sup>†</sup>, <strong>J Park</strong>, DC Cha, DH Nam, J Jung, Y Choi, J Choi, BH Kim, S Lee</p>
+                <p class="venue"><span class="en">In preparation</span><span class="ko" lang="ko">준비 중 (in preparation)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="block" id="patents">
+        <h2>Patents</h2>
+        <div class="entries">
+            <div class="item">
+                <span class="what"><span class="en">Method for preparing multipods silica nanoparticles and silica nanoparticles with multipods</span><span class="ko" lang="ko">멀티포드 실리카 나노입자의 제조방법 및 멀티포드 실리카 나노입자</span></span>
+                <span class="when"></span>
+                <p class="where"><span class="en"><span lang="ko">멀티포드 실리카 나노입자의 제조방법 및 멀티포드 실리카 나노입자</span></span><span class="ko" lang="ko">Method for preparing multipods silica nanoparticles and silica nanoparticles with multipods</span></p>
+                <p class="more"><span class="en">Inventors: S Lee, <strong>J Park</strong>, DH Nam, H Kim</span><span class="ko" lang="ko">발명자: 이승현, <strong>박재준</strong>, 남동환, 김하영</span></p>
+                <ul class="more">
+                    <li><span class="en">Republic of Korea: Reg. No. 10-2993267, registered Jul. 15, 2026 (Appl. No. 10-2024-0124356, filed Sep. 12, 2024).</span><span class="ko" lang="ko">대한민국: 등록번호 10-2993267, 2026.07.15 등록 (출원번호 10-2024-0124356, 2024.09.12 출원).</span> <span class="status done"><span class="en">Registered</span><span class="ko" lang="ko">등록</span></span></li>
+                    <li><span class="en">PCT: PCT/KR2024/014515, filed Sep. 25, 2024.</span><span class="ko" lang="ko">PCT: PCT/KR2024/014515, 2024.09.25 출원.</span></li>
+                    <li><span class="en">United States: Appl. No. 19/377,766, national phase of the PCT application.</span><span class="ko" lang="ko">미국: 출원번호 19/377,766, PCT 출원의 미국 국내단계 진입.</span> <span class="status open"><span class="en">Pending</span><span class="ko" lang="ko">심사 중</span></span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="block" id="presentations">
+        <h2>Presentations <small><span class="en">15 as presenter, newest first</span><span class="ko" lang="ko">본인 발표 15건, 최신순</span></small></h2>
+        <div class="entries">
+            <p class="note en">RSK: The Rubber Society of Korea. KSIEC: The Korean Society of Industrial and Engineering Chemistry. KCS: Korean Chemical Society.</p>
+            <div class="talks">
+                <div>
+                    <h3>2026</h3>
+                    <ol>
+                        <li><span class="t">Fabrication of Multipods Silica-Gold Core-Shell Nanoparticles for SERS-active Substrate</span><span class="tag">Poster</span><span class="c"><span class="en">KSIEC Spring Meeting 2026</span><span class="ko" lang="ko">한국공업화학회 2026 춘계 학술대회</span></span></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>2025</h3>
+                    <ol>
+                        <li><span class="t">Development of Silica@Gold Core-Shell Nanoparticle Arrays and Highly Sensitive SERS-active Substrates Using Electrophoresis</span><span class="tag oral">Oral</span><span class="c"><span class="en">RSK Fall Meeting 2025</span><span class="ko" lang="ko">한국고무학회 2025 추계 학술대회</span></span></li>
+                        <li><span class="t">Fabrication of Sensitive SERS-Active Substrates via Dielectrophoresis for the Assembly of Plasmonic Metal Nanoparticles</span><span class="tag oral">Oral</span><span class="c"><span class="en">RSK Spring Meeting 2025</span><span class="ko" lang="ko">한국고무학회 2025 춘계 학술대회</span></span></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>2024</h3>
+                    <ol>
+                        <li><span class="t">Effect of Halide Ion on Surface Morphological Control and Chain Structured Silica Particles Synthesis</span><span class="tag">Poster</span><span class="c"><span class="en">RSK Fall Meeting 2024</span><span class="ko" lang="ko">한국고무학회 2024 추계 학술대회</span></span></li>
+                        <li><span class="t">One-pot Method for preparing multipods silica nanoparticles</span><span class="tag">Poster</span><span class="c"><span class="en">RSK Spring Meeting 2024</span><span class="ko" lang="ko">한국고무학회 2024 춘계 학술대회</span></span></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>2023</h3>
+                    <ol>
+                        <li><span class="t">One-pot Synthesis of Multipods Silica Nanoparticles as SERS-active Substrate by Gold Coating</span><span class="tag">Poster</span><span class="c"><span class="en">KSIEC Fall Meeting 2023</span><span class="ko" lang="ko">한국공업화학회 2023 추계 학술대회</span></span></li>
+                        <li><span class="t">One-pot Synthesis of Multipods Silica@Gold Nanoparticles as a Highly Sensitive SERS-active Substrate and their Molecular Detection Application</span><span class="tag">Poster</span><span class="c"><span class="en">Biosensors 2023, Busan, Korea</span><span class="ko" lang="ko">Biosensors 2023, 부산</span></span></li>
+                        <li><span class="t">One-Pot Method for Multipods Silica Nanoparticles Synthesis</span><span class="tag oral">Oral</span><span class="c"><span class="en">RSK Spring Meeting 2023</span><span class="ko" lang="ko">한국고무학회 2023 춘계 학술대회</span></span></li>
+                        <li><span class="t">One-Pot Fabrication of Multipods Silica Nanoparticles with Halide Ions</span><span class="tag">Poster</span><span class="c"><span class="en">KSIEC Spring Meeting 2023</span><span class="ko" lang="ko">한국공업화학회 2023 춘계 학술대회</span></span></li>
+                        <li><span class="t">Multipods Silica for SERS-active Substrate Application by Gold Coating</span><span class="tag"><span class="en">Poster with oral presentation</span><span class="ko" lang="ko">Poster + 구두발표</span></span><span class="c"><span class="en">KCS Spring Meeting 2023</span><span class="ko" lang="ko">대한화학회 2023 춘계 학술발표회</span></span></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>2022</h3>
+                    <ol>
+                        <li><span class="t">Fabrication of Multipods Silica Nanoparticle coated with gold as SERS-active Substrates</span><span class="tag"><span class="en">Poster with oral presentation</span><span class="ko" lang="ko">Poster + 구두발표</span></span><span class="c"><span class="en">KCS Fall Meeting 2022</span><span class="ko" lang="ko">대한화학회 2022 추계 학술발표회</span></span></li>
+                        <li><span class="t">Fabrication of Gold Coated Multipods Silica Nanoparticles as SERS-active Substrate</span><span class="tag">Poster</span><span class="c">AsiaNANO 2022</span></li>
+                        <li><span class="t">Fabrication of Gold Coated Multipods Silica Nanoparticles as SERS-active Substrates</span><span class="tag">Poster</span><span class="c"><span class="en">KSIEC Spring Meeting 2022</span><span class="ko" lang="ko">한국공업화학회 2022 춘계 학술대회</span></span></li>
+                        <li><span class="t">Multipods Silica Nanoparticle Coated with Gold as Surface Enhanced Raman Scattering (SERS)-active Substrates</span><span class="tag oral">Oral</span><span class="c"><span class="en">RSK Spring Meeting 2022</span><span class="ko" lang="ko">한국고무학회 2022 춘계 학술대회</span></span></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>2021</h3>
+                    <ol>
+                        <li><span class="t">Anisotropic Gold Coated on Silica Nanoparticles as Surface Enhanced Raman Scattering (SERS) Substrates</span><span class="tag"><span class="en">Poster with oral presentation</span><span class="ko" lang="ko">Poster + 구두발표</span></span><span class="c">RubberCon 2021</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span><span class="en">Last updated November 2026</span><span class="ko" lang="ko">최종 수정 2026년 11월</span></span>
+        <span class="links"><a href="./index.html"><span class="en">Back to CV</span><span class="ko" lang="ko">CV로 돌아가기</span></a></span>
+    </footer>
+</div></div>
+
+<script>
+(function(){
+    var root=document.documentElement,btns=document.querySelectorAll('[data-set-lang]');
+    function show(l){root.setAttribute('data-lang',l);root.lang=l;
+        btns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set-lang')===l?'true':'false')});
+        /* carry the language to the other page in the link itself, for embeds where browser storage is blocked */
+        document.querySelectorAll('a[href^="./"]').forEach(function(a){a.setAttribute('href',a.getAttribute('href').split('#')[0]+(l==='ko'?'#ko':''))});}
+    btns.forEach(function(b){b.addEventListener('click',function(){var l=b.getAttribute('data-set-lang');
+        try{localStorage.setItem('cv-lang',l)}catch(e){} show(l);});});
+    show(root.getAttribute('data-lang')||'en');
+})();
+</script>
 </body>
 </html>
