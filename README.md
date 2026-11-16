@@ -2,11 +2,11 @@
 
 정적 HTML/CSS 사이트. 빌드 과정 없음.
 
-- `index.html`: CV (소개, 연구 이미지, 학력, 대표 논문, 기술, 교육, 수상, 과제, 경력)
+- `index.html`: CV (소개, 연구 이미지, 학력, 대표 논문, 과제, 수상, 기술, 교육, 경력)
 - `publications.html`: 논문 목록, 준비 중 논문, 특허, 학회 발표
 - `style.css`, `images/`
 
-2026-11-16 전면 개편본(v6). 근거: CV 설문 1차·2차 응답, 수료증·상장 PDF, 학회 포스터 PPT, 대화 중 지시.
+2026-11-16 전면 개편본(v8). 근거: CV 설문 1차·2차 응답, 수료증·상장 PDF, 학회 포스터 PPT, 대화 중 지시.
 
 ## 영문 / 한글 전환
 
@@ -51,7 +51,7 @@
 - 항목 추가: 같은 섹션의 `<div class="item">` 또는 `<div class="pub">` 블록을 복사.
 - 논문 추가: `publications.html` 목록 맨 위에 추가하고 번호, 상단 문장의 편수, 섹션 제목의 편수, `index.html` 우측 표를 함께 수정.
 - 표지가 있는 논문: `<div class="pub withcover">` 구조(본문은 `.text` 안, 표지 `<img>`는 그 뒤).
-- 색: `style.css` 맨 위 변수. 상단 띠 `--green-pale`, 하단 띠 `--blue-pale`, 한양 블루 `--blue`.
+- 색: `style.css` 맨 위 변수. 배경은 흰색(Google Sites 임베드 화면과 맞춤, 다크 모드 없음). 섹션 표시선은 상단 `--green-mark`, 하단 `--blue-mark`. 한양 블루 `--blue`. 배경에 다시 색을 넣으려면 `--green-pale`, `--blue-pale`만 바꾸면 됨.
 - PDF: 브라우저 인쇄(PDF로 저장)용 스타일이 `style.css` 끝에 있음. 현재 보이는 언어로 출력됨.
 - 날짜 표기: 영문 `Jul. 2022`, `Sep. 12, 2024` / 한글 `2022.07`, `2024.09.12`.
 - 더 이상 쓰지 않는 기존 파일: `images/CEC.png`, `EA.png`, `LoC.png`, `NA.png`, `logo_*.png` (삭제 가능).

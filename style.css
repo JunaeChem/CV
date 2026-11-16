@@ -1,5 +1,5 @@
 /* Jaejun Park, academic CV
-   Layout: one left-aligned column (max 920px) on a white page, so it blends into the white Google Sites page that embeds it.
+   Layout: one left-aligned column (max 1100px) on a white page, so it blends into the white Google Sites page that embeds it.
    Part A (top through the publication list) uses green markers; part B (the rest) uses blue markers.
    Light theme only: the embedding page is always white.
    Each section is a two-column row: a narrow rail with the section name, then the entries.
@@ -38,7 +38,7 @@ html[data-lang="ko"] body{word-break:keep-all}
 
 .band-a{background:var(--green-pale)}
 .band-b{background:var(--blue-pale)}
-.page{max-width:920px;margin:0 auto;padding:0 24px}
+.page{max-width:1100px;margin:0 auto;padding:0 24px}
 .band-b .page{padding-bottom:32px}
 .band-b .block.first{border-top:1px solid var(--rule)}
 
