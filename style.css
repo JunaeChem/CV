@@ -1,12 +1,15 @@
 /* Jaejun Park, academic CV
-   Layout: one left-aligned column (max 920px) on two full-width tinted bands.
-   Band A (pale green) runs from the top through the publication list; band B (pale blue) holds the rest.
+   Layout: one left-aligned column (max 920px) on a white page, so it blends into the white Google Sites page that embeds it.
+   Part A (top through the publication list) uses green markers; part B (the rest) uses blue markers.
+   Light theme only: the embedding page is always white.
    Each section is a two-column row: a narrow rail with the section name, then the entries.
    Name and text are black; Hanyang blue is used for links, pastel green for markers and tags.
    Language: elements with class "en" or "ko" are shown according to html[data-lang]. */
 :root{
-  --green-pale:#f2f8f3;   /* band A */
-  --blue-pale:#eff4f9;    /* band B */
+  --green-pale:#ffffff;   /* background of part A; white to match the embedding page */
+  --blue-pale:#ffffff;    /* background of part B */
+  --green-mark:#a9d8b6;   /* section marker, part A */
+  --blue-mark:#a9c6e6;    /* section marker, part B */
   --surface:#ffffff;
   --ink:#111820;
   --muted:#566371;
@@ -19,15 +22,8 @@
   --body:"Instrument Sans","Noto Sans KR","Segoe UI","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif;
   --rail:176px;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --green-pale:#131b17; --blue-pale:#12171d; --surface:#1a2129; --ink:#e7ebee; --muted:#98a5b0;
-    --rule:#2a343d; --blue:#8fbdf0; --blue-soft:#1a2c40; --green:#213a2b; --green-ink:#9fd3b0;
-    color-scheme:dark;
-  }
-}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;color-scheme:light;background:#fff}
 body{margin:0;background:var(--blue-pale);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
 a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{text-decoration-thickness:2px}
@@ -41,12 +37,13 @@ html:not([data-lang="ko"]) .ko{display:none}
 html[data-lang="ko"] body{word-break:keep-all}
 
 .band-a{background:var(--green-pale)}
-.band-b{background:linear-gradient(var(--green-pale),var(--blue-pale) 96px)}
+.band-b{background:var(--blue-pale)}
 .page{max-width:920px;margin:0 auto;padding:0 24px}
-.band-b .page{padding-bottom:64px}
+.band-b .page{padding-bottom:32px}
+.band-b .block.first{border-top:1px solid var(--rule)}
 
 /* top bar */
-.top{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--green)}
+.top{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:2px solid var(--green-mark)}
 .top .who{font-family:var(--display);font-size:19px;font-weight:500;color:var(--ink);text-decoration:none}
 .top .right{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center}
 .top nav{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:15px}
@@ -55,7 +52,7 @@ html[data-lang="ko"] body{word-break:keep-all}
 .top nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--green-ink)}
 .lang{display:flex;border:1px solid var(--green-ink);border-radius:999px;overflow:hidden}
 .lang button{font:inherit;font-size:13.5px;line-height:1;padding:7px 12px;border:0;background:transparent;color:var(--green-ink);cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--green-ink);color:var(--green-pale)}
+.lang button[aria-pressed="true"]{background:var(--green-ink);color:#fff}
 
 /* hero */
 .hero{padding:52px 0 36px;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:32px 48px;align-items:end}
@@ -84,8 +81,8 @@ html[data-lang="ko"] body{word-break:keep-all}
 /* sections */
 .block{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:8px 32px;padding:30px 0;border-top:1px solid var(--rule)}
 .block.first{border-top:0}
-.block>h2{font-family:var(--display);font-weight:500;font-size:23px;line-height:1.2;margin:0;text-wrap:balance;padding-left:12px;border-left:4px solid var(--green);align-self:start}
-.band-b .block>h2{border-left-color:var(--blue-soft)}
+.block>h2{font-family:var(--display);font-weight:500;font-size:23px;line-height:1.2;margin:0;text-wrap:balance;padding-left:12px;border-left:4px solid var(--green-mark);align-self:start}
+.band-b .block>h2{border-left-color:var(--blue-mark)}
 .block>h2 small{display:block;font-family:var(--body);font-size:13.5px;font-weight:400;color:var(--muted);margin-top:6px}
 .entries{display:flex;flex-direction:column;gap:20px;min-width:0}
 .note{font-size:14px;color:var(--muted);margin:0}
@@ -168,7 +165,7 @@ footer{border-top:1px solid var(--rule);padding-top:20px;font-size:13.5px;color:
 
 /* Print: the browser's "Save as PDF" gives a clean paper CV in the language currently shown. */
 @media print{
-  :root{--green-pale:#fff;--blue-pale:#fff;--surface:#fff;--ink:#000;--muted:#444;--rule:#bbb;--blue:#000;--blue-soft:#fff;--green:#fff;--green-ink:#000}
+  :root{--green-pale:#fff;--blue-pale:#fff;--surface:#fff;--ink:#000;--muted:#444;--rule:#bbb;--blue:#000;--blue-soft:#fff;--green:#fff;--green-ink:#000;--green-mark:#fff;--blue-mark:#fff}
   body{font-size:10.5pt;line-height:1.4;background:#fff}
   .band-a,.band-b{background:none}
   .page{max-width:none;padding:0}
