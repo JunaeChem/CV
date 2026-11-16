@@ -2,11 +2,11 @@
 
 정적 HTML/CSS 사이트. 빌드 과정 없음.
 
-- `index.html`: CV (소개, 연구 이미지, 학력, 대표 논문, 과제, 수상, 기술, 교육, 경력)
+- `index.html`: CV (소개, 학력, Research highlights, Journal covers, 대표 논문 6편, 과제, 수상, 기술, 교육, 경력)
 - `publications.html`: 논문 목록, 준비 중 논문, 특허, 학회 발표
 - `style.css`, `images/`
 
-2026-11-16 전면 개편본(v8). 근거: CV 설문 1차·2차 응답, 수료증·상장 PDF, 학회 포스터 PPT, 대화 중 지시.
+2026-11-16 전면 개편본(v9). 근거: CV 설문 1차·2차 응답, 수료증·상장 PDF, 학회 포스터 PPT, 대화 중 지시.
 
 ## 영문 / 한글 전환
 
@@ -32,6 +32,7 @@
 |---|---|---|
 | PENDING:c4 | index `#training` | COMSOL 다른 모듈 교육(AC/DC, Microfluidics, Particle Tracing)의 과정명, 주관, 날짜 |
 | EDIT:summary | index 소개문 | 영문·한글 1인칭 초안. 문장 검토 |
+| EDIT:highlights | index `#research` | Research highlights 4건의 영문·한글 초안. 게재 논문, 등록 특허, 학회 발표 제목에 있는 내용만 사용함. 문장 검토 |
 | EDIT:metrics | index 우측 표 | Publications는 [1]–[12](게재 승인 1편 포함). Citations, h-index는 Google Scholar 2026-11 기준 |
 | EDIT:p12 | publications `#p12` | *Nano Convergence* 게재 승인 논문. 출판되면 권, article number, DOI 추가. Review 태그는 제목으로 판단한 것 |
 | EDIT:d3 | publications `#prep` | 준비 중 논문 2편. 두 번째 논문의 앞 세 저자를 equal contribution으로 표기한 것이 맞는지 확인 |
@@ -44,13 +45,20 @@
 - 수료증·상장 이미지: 텍스트로만 기재
 - 프로필 사진
 - 대표 논문의 Contribution 문구
-- 저널 표지 갤러리: 표지는 해당 논문 오른쪽에 표시
+
+## 동작 방식
+
+- **이미지 확대:** `<a class="zoom" href="큰 이미지" data-title="제목" data-link="논문 주소" data-sub="보조 설명">` 안의 이미지를 누르면 확대 창이 뜸. 제목은 `data-link`가 있으면 그 주소로 연결됨. 닫기: × 버튼, 바깥 영역, Esc.
+- 확대 창은 화면 가운데가 아니라 누른 이미지 근처에 뜸. Google Sites 임베드에서는 페이지 전체가 세로로 긴 틀 안에 들어가므로, 화면 가운데 기준으로 띄우면 보이지 않는 위치에 뜨기 때문임. 이 방식을 화면 고정(`position:fixed`)으로 바꾸지 말 것.
+- **논문 요약 접기:** `publications.html`의 요약은 `<details class="gist">`로 접혀 있고 "Summary / 요약"을 누르면 펼쳐짐. 인쇄할 때는 자동으로 모두 펼쳐짐.
+- **두 페이지 길이:** CV와 Publications의 길이를 비슷하게 맞춰 둠(PC 폭 기준 각각 약 4,800 px, 4,500 px). Google Sites 임베드 상자 하나에 두 페이지가 번갈아 뜨기 때문임. 내용을 크게 늘리거나 줄일 때 이 균형을 확인할 것.
 
 ## 수정 방법
 
 - 항목 추가: 같은 섹션의 `<div class="item">` 또는 `<div class="pub">` 블록을 복사.
 - 논문 추가: `publications.html` 목록 맨 위에 추가하고 번호, 상단 문장의 편수, 섹션 제목의 편수, `index.html` 우측 표를 함께 수정.
-- 표지가 있는 논문: `<div class="pub withcover">` 구조(본문은 `.text` 안, 표지 `<img>`는 그 뒤).
+- 표지가 있는 논문: `<div class="pub withcover">` 구조(본문은 `.text` 안, 표지는 그 뒤의 `<a class="zoom">` 안).
+- 대표 논문(index)은 공동 제1저자 논문 6편. Publications의 해당 항목과 내용을 함께 고칠 것.
 - 색: `style.css` 맨 위 변수. 배경은 흰색(Google Sites 임베드 화면과 맞춤, 다크 모드 없음). 섹션 표시선은 상단 `--green-mark`, 하단 `--blue-mark`. 한양 블루 `--blue`. 배경에 다시 색을 넣으려면 `--green-pale`, `--blue-pale`만 바꾸면 됨.
 - PDF: 브라우저 인쇄(PDF로 저장)용 스타일이 `style.css` 끝에 있음. 현재 보이는 언어로 출력됨.
 - 날짜 표기: 영문 `Jul. 2022`, `Sep. 12, 2024` / 한글 `2022.07`, `2024.09.12`.
